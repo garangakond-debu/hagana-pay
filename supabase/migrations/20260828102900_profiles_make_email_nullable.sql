@@ -1,0 +1,1 @@
+alter table profiles alter column email drop not null;

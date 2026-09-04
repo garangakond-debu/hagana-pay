@@ -1,0 +1,34 @@
+{
+  "type": "fullstack-supabase",
+  "paths": {
+    "root": "mobile",
+    "app": "app",
+    "components": "components",
+    "src": "src",
+    "api": "api",
+    "web": "web",
+    "alias": {
+      "@": "mobile"
+    }
+  },
+  "workspaces": {
+    "mobile": {
+      "type": "expo",
+      "root": "mobile"
+    },
+    "api": {
+      "type": "express",
+      "root": "api",
+      "entry": "index.js"
+    },
+    "web": {
+      "type": "static",
+      "root": "web"
+    },
+    "database": {
+      "type": "supabase",
+      "root": "supabase",
+      "migrations": "supabase/migrations"
+    }
+  }
+}
